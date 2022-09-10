@@ -2,20 +2,23 @@
 
 export default function Card(data, index){
     const song = data.name.split('-');
+    const time = data.duration.toString();
+    const min = time.slice(0,1);
+    const sec = time.slice(1);
 
     return`
-        <div>
-            <div>
+        <div class="card">
+            <div  class="card__top">
                 <span>${index}</span>
                 <img src=${data.thumbnail} alt="">
                 <div>
-                    <p>${song[1]}</p>
-                    <p>${song[0]}</p>
+                    <p class="title">${song[1]}</p>
+                    <p class="artist">${song[0]}</p>
                 </div>
             </div>
-            <div>
-                <p></p>
-                <a href="">play</a>
+            <div class="card__bottom">
+                <p>${min}:${sec}</p>
+                <a href="#/player?id=${data.id}">play</a>
                 <a href="#" data-id=${data.id} id="download__btn">download</a>
             </div>
         </div>

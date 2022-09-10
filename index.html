@@ -5,26 +5,35 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sneekify</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     
-    <header>
+    <header class="header">
       <a href="#/" class="nav__logo">Sneekify</a>
 
       <nav class="navigation">
-        <ul class="nav__list"><a href="#/" class="nav__link">Home</a></ul>
-        <ul class="nav__list"><a href="#/player" class="nav__link">Player</a></ul>
-        <ul class="nav__list"><a href="#/download" class="nav__link">Favorites</a></ul>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#/player" class="nav__link">Player</a></li>
+          <li class="nav__item"><a href="#/download" class="nav__link">Favorites</a></li>
+        </ul>
+        
       </nav>
 
-      <a href="#" class="nav__download"></a>
+      <!-- <a href="#" class="nav__download"></a> -->
     </header>
 
-    <main id="main">
+    <main id="main" class="main">
     </main>
 
-    <div id="app"></div>
+    <div id="app" ></div>
+
     <script src="//unpkg.com/navigo@6"></script>
     <script type="module" src="/javascript/Main.js"></script>
   </body>

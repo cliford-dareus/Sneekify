@@ -1,9 +1,19 @@
 import view from '../javascript/Utils'
+import { playVideo } from '../javascript/API'
 
 export default async function Home(path){
-    console.log(path)
+    console.log(window.location)
+    const id = window.location.hash.split('?id=')[1];
 
     view.innerHTML = `
-        <h1>Search, listen and download your favorites songs and videos.</h1>
+        <div class="player__container">
+            <div id="player" class="player"></div>
+        
+        <div class="player__detail">
+            <p>Look at me now</p>
+        </div>
+    </div>
     `
+    playVideo(id)
 };
+

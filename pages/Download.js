@@ -5,6 +5,6 @@ import view from "../javascript/Utils"
 
 export default function Download(){
    view.innerHTML = `
-        ${Form()}
+        // ${Form()}
         <div>Download</div>`
 };
